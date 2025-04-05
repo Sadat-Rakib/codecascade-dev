@@ -1,5 +1,7 @@
 ## 💻 CodeCasCade.dev
 
+---
+
 🚀 A futuristic, glowing, fully responsive Computer Science education website built from scratch with **HTML**, **CSS**, **JavaScript**, and **Bootstrap**. Learn everything from **DSA** to **AI** in a visually immersive platform designed for real-world skills and dev vibes. 💥
 
 ---
