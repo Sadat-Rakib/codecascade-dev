@@ -1,4 +1,4 @@
-# 💻 CodeCasCade.dev
+## 💻 CodeCasCade.dev
 
 🚀 A futuristic, glowing, fully responsive Computer Science education website built from scratch with **HTML**, **CSS**, **JavaScript**, and **Bootstrap**. Learn everything from **DSA** to **AI** in a visually immersive platform designed for real-world skills and dev vibes. 💥
 
@@ -30,22 +30,27 @@
 
 ---
 
-🌐 Deployment
+## 🌐 Deployment
 
 This site is hosted with:
 
-🖥️ https://codecascade-dev-m93wljgd1gg-sadat-rakib-beta.platform.beta.sidepro.app/index.html
+## 🖥️ https://codecascade-dev-m93wljgd1gg-sadat-rakib-beta.platform.beta.sidepro.app/index.html
 
-👨‍💻 Author
-Mir Sadat Bin Rakib
+## 👨‍💻 Author
+
+- Mir Sadat Bin Rakib
+
 🎓 Student • 💻 Developer • 🎨 Designer
 
-📜 License
-MIT License. Feel free to fork, remix, and build your own version 🚀
-Star ⭐ this repo if you find it helpful or inspiring!
+## 📜 License
 
-"Master Computer Science with glow, flow, and code."
-Built with 💙 by a dev who dreams big.
+MIT License. Feel free to fork, remix, and build your own version 🚀
+
+## Star ⭐ this repo if you find it helpful or inspiring!
+
+## "Master Computer Science with glow, flow, and code."
+
+## Built with 💙 by a dev who dreams big.
 
 ## 📁 Folder Structure
 
