@@ -17,8 +17,6 @@
 
 ---
 
----
-
 ## 🔧 Tech Stack
 
 | Technology     | Use                       |
@@ -64,10 +62,3 @@ CompSci_Website/
 ├── courses.html
 ├── payment.html
 └── README.md
-
-'''
-
-
-
-
-
