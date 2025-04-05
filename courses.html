@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses - CodeCasCade.dev</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+        }
+
+        .course-card {
+            perspective: 1000px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .course-card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front,
+        .card-back {
+            backface-visibility: hidden;
+            border-radius: 15px;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .card-front img {
+            object-fit: cover;
+            height: 100%;
+        }
+
+        .card-front {
+            z-index: 2;
+        }
+
+        .card-back {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            transform: rotateY(180deg);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .glow-btn {
+            background-color: #00f2ff;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            box-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff;
+        }
+
+        .glow-btn:hover {
+            background-color: #0ff;
+            box-shadow: 0 0 20px #0ff;
+        }
+
+        .section-title {
+            text-shadow: 0 0 12px #00f2ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-glow" href="index.html">CodeCasCade.dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="articles.html">Articles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="text-center text-white py-5 bg-black">
+        <div class="container">
+            <h1 class="display-5 fw-bold section-title">Explore Our Courses</h1>
+            <p class="lead">Interactive, hands-on, and built to make you a CS beast.</p>
+        </div>
+    </header>
+    <!-- Course Cards -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <!-- Course Cards -->
+                <section class="py-5">
+                    <div class="container">
+                        <div class="row g-4 justify-content-center">
+
+                            <!-- Course Card: DSA -->
+                            <div class="col-md-4">
+                                <div class="course-card">
+                                    <div class="card-inner" style="height: 280px;"> <!-- Increased height -->
+                                        <div class="card-front">
+                                            <img src="images/DSA.jpeg" class="w-100 rounded" alt="DSA"
+                                                style="height: 100%; object-fit: cover; object-position: top;" />
+                                        </div>
+                                        <div class="card-back text-center">
+                                            <h5>Data Structures & Algorithms</h5>
+                                            <p>Master recursion, sorting, trees, graphs, and problem solving like a pro.
+                                            </p>
+                                            <a href="payment.html" class="btn glow-btn mt-3">Enroll Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Course Card: Python -->
+                            <div class="col-md-4">
+                                <div class="course-card">
+                                    <div class="card-inner" style="height: 280px;">
+                                        <div class="card-front">
+                                            <img src="\images\Python.jpg" class="w-100 rounded" alt="Python">
+                                        </div>
+                                        <div class="card-back text-center">
+                                            <h5>Python Programming</h5>
+                                            <p>Learn Python from scratch. Build real apps and automate everything.</p>
+                                            <a href="payment.html" class="btn glow-btn mt-3">Enroll Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Course Card: Full Stack -->
+                            <div class="col-md-4">
+                                <div class="course-card">
+                                    <div class="card-inner" style="height: 280px;">
+                                        <div class="card-front">
+                                            <img src="\images\Web-Development.jpg" class="w-100 rounded"
+                                                alt="Full Stack">
+                                        </div>
+                                        <div class="card-back text-center">
+                                            <h5>Full Stack Development</h5>
+                                            <p>From HTML/CSS to Node.js and MongoDB. Build and deploy your own apps.</p>
+                                            <a href="payment.html" class="btn glow-btn mt-3">Enroll Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <!-- Footer -->
+                <footer class="text-center py-4 bg-dark text-light">
+                    <div class="container">
+                        <p>&copy; 2025 CodeCasCade.dev — All rights reserved.</p>
+                        <p>Created by Mir Sadat Bin Rakib</p>
+                    </div>
+                </footer>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+/* css/style.css */
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.text-glow {
+    text-shadow: 0 0 8px #0ff, 0 0 16px #0ff;
+}
+
+.glow {
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #f0f, 0 0 20px #f0f;
+    }
+
+    to {
+        text-shadow: 0 0 20px #ff0, 0 0 30px #ff0;
+    }
+}
+
+.bg-gradient {
+    background: linear-gradient(120deg, #1f1f1f, #0f0c29, #302b63, #24243e);
+}
+
+.feature-box {
+    padding: 20px;
+    background: #1a1a1a;
+    border: 2px solid #444;
+    color: #fff;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00f2ff;
+}
+
+.glow-box {
+    animation: float-glow 2.5s ease-in-out infinite;
+}
+
+@keyframes float-glow {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
